@@ -1,0 +1,31 @@
+v2.1 by PatPeter
+- 2012-01-01 00:30 - Removed redundant information on alternate player toggle.
+- 2012-03-17 12:22 - Removed src as the root folder so that bin, .project, and .classpath would not be picked up.
+- 2012-03-17 12:23 - Removed comments from first version.
+- 2012-03-17 12:26 - Moved changelog.
+
+v2.0 by PatPeter
+- 2011-12-24 19:30 - Commented out bloated onEnable(), onDisable(), and usage() body.
+- 2011-12-24 19:30 - Replaced onEnable() and onDisable() bodies with single-line messages.
+- 2011-12-24 19:30 - Replaced usage() body with a single-line message.
+- 2011-12-24 19:35 - Changed "/gm toggle" to simply /gm.
+- 2011-12-24 19:35 - Added ? to help check.
+- 2011-12-31 18:30 - Added more lines to usage without repetition.
+- 2011-12-31 18:40 - Moved gm.admin test outside the for loop - no need to have it loop and then test twice if the player cannot change the game mode of another.
+- 2011-12-31 19:15 - Re-added ability to use 0 and 1 for survival and creative, respectively.
+- 2011-12-31 19:35 - Fixed several typos, i.e. "Insufficent" and "isent".
+- 2011-12-31 19:45 - Changed toggle logic so that a player can only switch to the game mode he or she has permissions for, instead of requiring that that player have both gm.survival and gm.creative, which made both of these redundant.
+- 2011-12-31 20:00 - Offloaded algorithm inefficiency to memory in for loop.
+
+v1.1
+- Added /gm toggle.
+- Fixed more bugs.
+
+v1.0
+- Public release.
+
+v0.2
+- Fixed bugs.
+
+v0.1
+- Finished coding.
