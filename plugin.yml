@@ -1,0 +1,8 @@
+name: GameMode
+version: v2.0
+main: me.scranner.GameMode.GameModeWrapper
+description: An implementation of Bukkit's GameMode with Permission support.
+commands:
+    gm:
+        description: Toggle your own game mode, someone else's game mode, or get the game mode of another player.
+        usage: /<command> [player] [mode]/has
