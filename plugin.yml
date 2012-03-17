@@ -1,5 +1,5 @@
 name: GameMode
-version: v2.0
+version: v2.1
 main: me.scranner.GameMode.GameModeWrapper
 description: An implementation of Bukkit's GameMode with Permission support.
 commands:

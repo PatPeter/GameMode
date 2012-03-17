@@ -39,7 +39,9 @@ public class GameModeWrapper extends JavaPlugin
 		Server server = player.getServer();
 
 		if (label.equalsIgnoreCase("gm")) {
-			if (args.length == 0) { // If only /gm was typed
+			
+			// If only /gm was typed
+			if (args.length == 0) {
 				GameMode gm = player.getGameMode();
 				
 				if (player.hasPermission("gm.admin")) {  	
@@ -54,12 +56,14 @@ public class GameModeWrapper extends JavaPlugin
 				
 			// If more than /gm was typed
 			} else if (args.length > 0) { 
+				
 				// If a player asks for help, ignore further parameters
 				if (args[0].equalsIgnoreCase("?") || args[0].equalsIgnoreCase("help")) {
 					usage(player);
 					return true;
 				} else {
-					// Check for admin permission before checking parameters - more efficient
+					
+					// Check for admin permission before checking parameters
 					if (player.hasPermission("gm.admin")) { 
 						Player target;
 						String name;
@@ -116,7 +120,6 @@ public class GameModeWrapper extends JavaPlugin
 
 		return false;
 	}
-
 
 	public void usage(Player player) {
 		player.sendMessage("/gm - Toggle your own game mode.");
